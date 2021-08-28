@@ -1,0 +1,51 @@
+.home{
+    max-width: 1200px;
+    margin-left: 23%;
+    
+}
+
+.home-text{
+    background-color: #FDF6F0;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.shop-now{
+    width: 40%;
+    margin: 50px auto;
+    border-radius: 0;
+    height: 50px;
+    border: none;
+    background-color: #706C61;
+    color: white;
+    cursor: pointer;
+}
+.shop-now:hover{
+    transform: scale(1.1);
+    transition: 300ms all ease;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.shop-now-link{
+    text-decoration: none;
+    color: white;
+}
+.home-heading{
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: #706C61;
+}
+.home-heading span{
+    color: black;
+}
+.home-tagline{
+    font-size: 1.3rem;
+    color: #706C61;
+}

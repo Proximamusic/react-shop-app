@@ -1,0 +1,31 @@
+.product{
+   max-width: 250px;
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+   text-align: center;
+   margin: 20px 20px;  
+   
+}
+.product-name{
+    margin: 5px 0;
+    font-size: 20px;
+}
+.product-info,.product-cost{
+    margin: 5px 0;
+}
+.product-image{
+    max-width: 200px;
+    margin: 20px auto;
+}
+.add-to-cart{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px auto;
+    cursor: pointer;
+   
+}
