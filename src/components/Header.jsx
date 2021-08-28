@@ -14,7 +14,7 @@ function Header() {
   },[])
 
   function handlePos(){
-    if(pos == 'none'){
+    if(pos === 'none'){
       setPos('block')
     }else{
       setPos('none');
