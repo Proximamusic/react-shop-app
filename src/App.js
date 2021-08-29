@@ -35,7 +35,7 @@ function App() {
   const [cart, dispatch] = useReducer(reducer,initialState);
   return (
     <basketContext.Provider value={{cart:cart, dispatch:dispatch}}>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Switch>
           <Route exact path="/bags">
