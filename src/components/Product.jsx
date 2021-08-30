@@ -7,6 +7,7 @@ import {basketContext} from '../App';
 function Product(props) {
     const basketVal = useContext(basketContext);
     const addToCart = ()=>{
+        //the function dispatches an action with the type and item tp be added in the cart
         basketVal.dispatch({
             type: 'add-to-cart',
             item: {

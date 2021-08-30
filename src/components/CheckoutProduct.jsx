@@ -6,11 +6,13 @@ export default function CheckoutProduct(props) {
     const basketVal = useContext(basketContext);
 
     const removefromcart = ()=>{
+        //the functione dispatches an action with a type and id to look for in array of items in basket
         basketVal.dispatch({
             type: 'remove-from-cart',
             id: props.id
         })
     }
+   
 
     return (
         <div className="checkout-product">

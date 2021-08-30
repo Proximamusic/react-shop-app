@@ -95,9 +95,15 @@
    position: absolute;
    right: 10%;
    height: 200px;
+   min-width: 200px;
    color: white;
-   padding: 20px;
+   padding: 20px 10px 0;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
    overflow-y:scroll;
+}
+
+.subtotal{
+    width: 50%;
+    margin: 20px auto;
 }
