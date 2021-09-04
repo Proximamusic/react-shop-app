@@ -48,10 +48,10 @@ function Header() {
 
 
       <div className="menu" style={{left:left}}>
-        <Link activeClassName='selected' class="nav-link" to="/shoes">
+        <Link  class="nav-link" to="/shoes">
           <span>Shoes</span>
         </Link>
-        <Link activeClassName='selected' class="nav-link" to="/bags">
+        <Link  class="nav-link" to="/bags">
           <span>Bags</span>
         </Link>
 

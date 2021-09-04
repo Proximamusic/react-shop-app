@@ -8,6 +8,7 @@
    margin: 20px 20px;  
    
 }
+
 .product-name{
     margin: 5px 0;
     font-size: 20px;
@@ -28,4 +29,9 @@
     margin: 5px auto;
     cursor: pointer;
    
+}
+.product-view-link{
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }

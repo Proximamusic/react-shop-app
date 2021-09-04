@@ -6,18 +6,24 @@ import Shoes from "./components/Shoes";
 import Masks from "./components/Masks";
 import Bags from "./components/Bags";
 import { createContext, useReducer } from "react";
+import ProductView from "./components/ProductView";
 
 export const basketContext = createContext();
 
 //simple reduce function to give us the total of the cost of basket item
-export const getBasketTotal = (basket)=>
-  basket?.reduce((amount,item)=> item.cost + amount, 0);
+export const getBasketTotal = (basket) =>
+  basket?.reduce((amount, item) => item.cost + amount, 0);
 
 export const initialState = {
   basket: [],
+  viewProduct: [{name:'Dummy',
+     cost: "NA",
+     imgLink: "NA",
+     info: 'NA'
+}],
 };
 export const reducer = (state, action) => {
-  // console.log(state.basket)
+  console.log(state.viewProduct)
   switch (action.type) {
     // code for adding into basket comes here
     case "add-to-cart":
@@ -30,8 +36,10 @@ export const reducer = (state, action) => {
       if (index > -1) {
         state.basket.splice(index, 1);
       }
-      return {...updatedBasket,basket: [...state.basket] };
-
+      return { ...updatedBasket, basket: [...state.basket] };
+    case "add-to-view-product":
+      return { ...state, viewProduct: [action.item ]};
+    // return {...state.viewProduct,viewProduct: action.item}
     default:
       return state;
   }
@@ -44,6 +52,10 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Switch>
+            <Route exact path="/product-display">
+              <Header />
+              <ProductView />
+            </Route>
             <Route exact path="/bags">
               <Header />
               <Bags />
