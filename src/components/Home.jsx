@@ -2,7 +2,7 @@ import React from 'react'
 import "./home.css";
 import { Link } from 'react-router-dom'
 
-{alert('Now you can click on the product image and view product in its full beauty!')}
+
 export default function Home() {
     return (
         <div className="home">

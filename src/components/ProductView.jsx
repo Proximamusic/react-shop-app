@@ -22,7 +22,7 @@ const moveToCart = ()=>{
 }
 
 useEffect(() => {
-    {alert('add to cart button on this page is still being worked on, currently it ends up in an error:(')}
+    {alert('add to cart button on this particular page is still being worked on, currently it ends up in an error:(')}
 }, [])
 
     return (
